@@ -1,0 +1,106 @@
+/* Base styling for a professional look */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .stopwatch {
+    background: #cc1616;
+    border: 1px solid #333;
+}
+
+.stopwatch {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background 0.3s, border 0.3s;
+    width: 320px;
+}
+
+#display {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #121212;
+    background-color: #c3e775;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 4px #007bff;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#laps {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+#laps li {
+    background-color: #f8f9fa;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body.dark-mode #laps li {
+    background-color: #333;
+    border-color: #444;
+}
+
+#themeSwitcherBtn {
+    background-color: #28a745;
+}
+
+#themeSwitcherBtn:hover {
+    background-color: #218838;
+}
